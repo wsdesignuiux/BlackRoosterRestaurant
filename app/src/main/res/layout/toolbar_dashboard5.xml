@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/black">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:src="@drawable/left_arrow"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Review"
+            android:letterSpacing="0.0425"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/white"
+            android:textSize="16.7sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pen" />
+</android.support.v7.widget.Toolbar>

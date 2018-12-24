@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Signup2Activity">
+
+    <include layout="@layout/toolbar_signup" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46.5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145.7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.1"
+            android:text="Your email?"
+            android:textColor="@color/yellow"
+            android:textSize="27.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Enter valid email"
+            android:textColor="@color/gray"
+            android:letterSpacing="0.0925"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="EMAIL ADDRESS"
+            android:letterSpacing="0.0925"
+            android:textColor="#828282"
+            android:textSize="11.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.2dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="joejojo@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/yellow"
+                android:textColorHint="@color/yellow"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mail_envelope_symbol" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/yellow" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="175.2dp"
+            android:letterSpacing="0.0925"
+            android:background="@drawable/rect_yellow"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

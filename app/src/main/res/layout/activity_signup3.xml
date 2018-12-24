@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Signup3Activity">
+
+    <include layout="@layout/toolbar_signup"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46.5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125.7dp"
+            android:letterSpacing="0.0825"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Enter password?"
+            android:textColor="@color/yellow"
+            android:textSize="29sp" />
+
+        <TextView
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:letterSpacing="0.0825"
+            android:text="Please fill the password"
+            android:textColor="@color/gray"
+            android:textSize="13.3sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/human"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp">
+
+                <TextView
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joejoo Perlan"
+                    android:textColor="@color/yellow"
+                    android:letterSpacing="0.0425"
+                    android:textSize="11.7sp"/>
+
+                <EditText
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="joejojo@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:background="#00000000"
+                    android:layout_marginTop="9.5dp"
+                    android:textColorHint="#828282"
+                    android:textColor="#828282"
+                    android:textSize="13.3sp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="PASSWORD"
+            android:letterSpacing="0.0925"
+            android:textColor="@color/gray"
+            android:textSize="11.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+
+
+            <EditText
+                android:fontFamily="@font/roboto_bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="********"
+                android:textColorHint="@color/yellow"
+                android:maxLength="6"
+                android:textSize="20sp"
+                android:inputType="numberPassword"
+                android:gravity="bottom"
+                android:backgroundTint="@color/yellow"
+                android:background="#00000000"/>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/show"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1.5dp"
+            android:background="@color/yellow"/>
+
+        <Button
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="75.2dp"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rect_yellow"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Dashboard5Activity">
+
+    <include layout="@layout/toolbar_dashboard5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--recycle can be use-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recycle"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/human"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:letterSpacing="0.0565"
+                                android:layout_height="wrap_content"
+                                android:text="Martha Kelly"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:letterSpacing="0.0565"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 day ago"
+                                android:layout_marginRight="17dp"
+                                android:textColor="@color/yellow"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:isIndicator="false"
+                            android:max="100"
+                            android:numStars="5"
+                            android:theme="@style/RatingBar"
+                            android:rating="2.5"
+                            android:stepSize="0.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.0565"
+                    android:text="Mauris non tempor quam, et lacinia"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="16.7sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#808080"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:text="sapien. Mauris accumsan."
+                    android:letterSpacing="0.0565"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="6.7dp"
+                    android:textColor="#808080"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f1f1f1"
+                    android:layout_marginTop="16.9dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/human"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:letterSpacing="0.0565"
+                                android:text="Martha Kelly"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="17dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:letterSpacing="0.0565"
+                                android:text="1 day ago"
+                                android:textColor="@color/yellow"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:isIndicator="false"
+                            android:max="100"
+                            android:numStars="5"
+                            android:rating="2.5"
+                            android:stepSize="0.0"
+                            android:theme="@style/RatingBar" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.0565"
+                    android:text="Mauris non tempor quam, et lacinia"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="16.7sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#808080"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:text="sapien. Mauris accumsan."
+                    android:letterSpacing="0.0565"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="6.7dp"
+                    android:textColor="#808080"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f1f1f1"
+                    android:layout_marginTop="16.9dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/human"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:letterSpacing="0.0565"
+                                android:layout_height="wrap_content"
+                                android:text="Martha Kelly"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:letterSpacing="0.0565"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 day ago"
+                                android:layout_marginRight="17dp"
+                                android:textColor="@color/yellow"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:isIndicator="false"
+                            android:max="100"
+                            android:numStars="5"
+                            android:theme="@style/RatingBar"
+                            android:rating="2.5"
+                            android:stepSize="0.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.0565"
+                    android:text="Mauris non tempor quam, et lacinia"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="16.7sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#808080"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:text="sapien. Mauris accumsan."
+                    android:letterSpacing="0.0565"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="6.7dp"
+                    android:textColor="#808080"/>
+
+            </LinearLayout>
+
+            <!--circle image view libarie can be used-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="17dp"
+                        android:src="@drawable/cake"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image1"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/khana"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image2"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/chines"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image3"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/khana"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image25"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/cake"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="80dp"
+                android:background="#f1f1f1" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

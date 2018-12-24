@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/user_1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.787dp"
+                        android:textColor="#000000"
+                        android:text="Olivia Long"/>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.787dp"
+                        android:textColor="#ffd21d"
+                        android:text="0.5 KM away"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="#ffd21d"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

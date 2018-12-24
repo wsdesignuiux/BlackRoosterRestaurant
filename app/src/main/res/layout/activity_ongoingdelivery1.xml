@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/googleMap"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/toolbar_ongoingdelivery" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/rect_yellow_map2"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="5.6dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="6dp"
+                android:text="1 h 4 min"
+                android:textColor="@color/white"
+                android:textSize="12.3sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="18.7dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rect_yellow_map2"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Job accepted by Jordan Hen"
+                android:textColor="@color/white"
+                android:textSize="16.7sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delivery will begin shortly. "
+                android:textColor="#707070"
+                android:textSize="13.3sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="170dp"
+        android:background="@android:color/white"
+        android:elevation="16dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="70dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <fragment
+            android:id="@+id/nameOfYourFragment"
+            android:name="fragement.BottomSheetFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/item" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

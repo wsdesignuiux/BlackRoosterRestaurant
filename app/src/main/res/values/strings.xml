@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BlackRoosterRestaurant</string>
+
+    <!--<string name="sign">-->
+    <!--<font fgcolor="#828282">Back to</font>-->
+    <!--<font fgcolor="#ffd21d">Sign in</font>-->
+    <!--</string>-->
+
+
+    <string name="description">
+        <font color="#090909">Neque porro quisquam est qui dolorem ipsum quia \ndolor sit amet, Lorem ipsum dolor sit amet\nconsectetur, adipisci velit...Neque porro quisquam\nest qui dolorem ipsum quia dolor sit amet,Lorem\nipsum dolor sit amet consectetur, adipisci velit...</font>
+    </string>
+
+    <string name="hello_world">
+        <font fgcolor="#000000"> knowledge ... </font>
+    <font fgcolor="#7970f9">Show more</font></string>
+</resources>

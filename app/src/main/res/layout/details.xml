@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vater" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/left_arrow"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/search_gray"
+                        android:tint="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/imagenice" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="17dp"
+                        android:gravity="right"
+                        android:elevation="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect_yellowbutton"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="OPEN"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:letterSpacing="0.0825"
+                            android:textSize="12.3sp"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Indish Lounge &amp;  juice Penika.."
+                    android:textColor="@color/black"
+                    android:textSize="23.5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Fine Dining - North Indian, Continental, Coffee,\nVegetable, Salad, Juice"
+                    android:textColor="@color/yellow"
+                    android:letterSpacing="0.0425"
+                    android:textSize="13.5sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Map"
+                            android:textColor="#1081e0"
+                            android:textSize="15.5sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Menu"
+                            android:textColor="#1081e0"
+                            android:textSize="15.5sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="270 Review"
+                            android:textColor="#1081e0"
+                            android:textSize="15.5sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="650 Photos"
+                            android:textColor="#1081e0"
+                            android:textSize="15.5sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#66707070" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/group4" />
+
+                        <TextView
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="10 AM  -  10 PM"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/placeholder" />
+
+                        <TextView
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="0.6 KM"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/hotelbell" />
+
+                        <TextView
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="DELIVERY"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#66707070" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14.5dp"
+                    android:lineSpacingExtra="1dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Neque porro quisquam est qui dolorem ipsum quia \ndolor sit amet, Lorem ipsum dolor sit amet\nconsectetur, adipisci velit...Neque porro quisquam\nest qui dolorem ipsum quia dolor sit amet,Lorem\nipsum dolor sit amet consectetur, adipisci velit..."
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

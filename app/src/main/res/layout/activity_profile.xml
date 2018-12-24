@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/knif" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/arrow" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/human"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Andrea Hira"
+                        android:letterSpacing="0.0425"
+                        android:textColor="@color/black"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/coffee_cup" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/india_rupee"
+                        android:tint="@color/yellow" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="15.3"
+                        android:textColor="@color/yellow"
+                        android:textSize="18.3sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12.5dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Food Lovers"
+                    android:textColor="#808080"
+                    android:textSize="18.3sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="17.7dp"
+                    android:background="#707070" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Detail Info"
+                    android:textColor="#808080"
+                    android:textSize="21sp"
+                    android:letterSpacing="0.0425"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Membership"
+                        android:letterSpacing="0.0625"
+                        android:textColor="@color/black"
+                        android:textSize="17.5sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Gold"
+                        android:letterSpacing="0.0425"
+                        android:textColor="@color/yellow"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="16.7dp"
+                    android:background="#707070" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Address"
+                    android:textColor="#808080"
+                    android:textSize="18.3sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:letterSpacing="0.0625"
+                    android:lineSpacingExtra="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Jalan Pogung Kidul Np. 2A, Pogung\nKidul, Sinduasi, Mlati,\nSleman, DIY, Yogyakarta"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#707070" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Email Address"
+                    android:textColor="#808080"
+                    android:textSize="18.3sp" />
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="joedom123@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#808080"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16.7dp"
+                    android:background="#707070" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16.7dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Mobile Number"
+                        android:textColor="#808080"
+                        android:textSize="18.3sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="17dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="+91-8559863995"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="13.5sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

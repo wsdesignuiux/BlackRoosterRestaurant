@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Payment2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar_payment2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/rect_gray1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="18dp"
+                        android:letterSpacing="0.0625"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Change your payment"
+                        android:textColor="@color/black"
+                        android:textSize="17.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="18.5dp"
+                        android:background="#ebebeb" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/frame"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/frame" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/visa" />
+
+                            <ImageView
+                                android:id="@+id/right"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="90dp"
+                                android:src="@drawable/verified" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/frame1"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/frame"
+                                android:layout_marginTop="15dp"
+                                android:tint="#707070" />
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="70dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/mastercard1" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/frame2"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/frame"
+                                android:tint="#707070" />
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="70dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/paypalbank" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#f9f9f9 " />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="CARDHOLDER NAME"
+                            android:letterSpacing="0.0425"
+                            android:textColor="#7a7a7a"
+                            android:textSize="13.3sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16.7dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Andrea Hirata"
+                                android:inputType="text"
+                                android:letterSpacing="0.0425"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="16.7sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/person" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#f9f9f9" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="CARD NUMBER"
+                            android:letterSpacing="0.0425"
+                            android:textColor="#7a7a7a"
+                            android:textSize="13.3sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16.7dp"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="1234 - 1236 - 9865 - 3955"
+                                android:inputType="number"
+                                android:maxLength="16"
+                                android:textColor="@color/yellow"
+                                android:textColorHint="@color/yellow"
+                                android:textSize="15.5sp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/walet"
+                                android:tint="@color/yellow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="16.7dp"
+                        android:background="@color/yellow" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="CVV"
+                                android:letterSpacing="0.0425"
+                                android:textColor="#7a7a7a"
+                                android:textSize="13.5sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:letterSpacing="0.0425"
+                                android:layout_marginRight="0dp"
+                                android:text="EXPIRATION DATE"
+                                android:textColor="#7a7a7a"
+                                android:textSize="13.5sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="#00000000"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="123"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="15.5sp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/card_cvv"
+                                    android:tint="#828282" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="45dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="#00000000"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="08/22"
+                                    android:inputType="date"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="15.5sp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/master_card"
+                                    android:tint="#838383" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#ebebe9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.8dp"
+                        android:layout_marginTop="17.5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22.5dp"
+                            android:layout_height="22.5dp"
+                            android:src="@drawable/right"
+                            android:tint="#828282" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:letterSpacing="0.0725"
+                            android:layout_marginLeft="28.7dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Save credit card information"
+                            android:textColor="#828282"
+                            android:textSize="15.5sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="100dp"
+                        android:background="@drawable/rect_yellow"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="Done"
+                        android:letterSpacing="0.0625"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

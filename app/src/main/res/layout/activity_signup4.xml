@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Signup4Activity">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="115dp"
+        android:src="@drawable/dot"/>
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you"
+        android:letterSpacing="0.1"
+        android:textSize="38sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="37.5dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:fontFamily="@font/roboto_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just a few thing to note before"
+        android:textSize="15sp"
+        android:letterSpacing="0.0425"
+        android:textColor="@color/gray"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:fontFamily="@font/roboto_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you get started"
+        android:textSize="15sp"
+        android:letterSpacing="0.0425"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:fontFamily="@font/roboto_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore to Menu"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:letterSpacing="0.0725"
+        android:layout_marginTop="75dp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/rect_yellow"/>
+</LinearLayout>

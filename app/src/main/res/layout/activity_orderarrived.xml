@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".OrderarrivedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130.3dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ellipse_cup" />
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tray" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="65.7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.0625"
+            android:text="Good!"
+
+            android:textColor="@color/yellow"
+            android:textSize="25.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8.7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.0625"
+            android:text="Your order is arrived."
+            android:textColor="@color/yellow"
+            android:textSize="25.5sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rect_yellow"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Back to Menu"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

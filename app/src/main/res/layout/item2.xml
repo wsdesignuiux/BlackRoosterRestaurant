@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="16.07dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/phone"
+                android:tint="#ffd21d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.0625"
+                android:text="Momo Mow Pisang,\nSusu Segar &amp; Roti Jogja"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Snack and Resto"
+                android:letterSpacing="0.0625"
+                android:textColor="@color/yellow"
+                android:textSize="14.5sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="0.5 Km"
+                    android:textColor="@color/black"
+                    android:textSize="21.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Away"
+                    android:textColor="#7a7a7a"
+                    android:textSize="15sp" />
+
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:isIndicator="false"
+                    android:max="10"
+                    android:numStars="5"
+                    android:theme="@style/RatingBar"
+                    android:rating="2.5"
+                    android:stepSize="0.0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#f0f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginTop="15.2dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_yellow_map2"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="OPEN"
+                        android:letterSpacing="0.0625"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Until 23:59 TODAY"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#f0f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/icecreme"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/cake"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Knock You Naked Brownies"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.0625"
+                        android:textSize="17.7sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Guavas"
+                        android:textColor="#ffd21d"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="13dp"
+                            android:layout_marginTop="13dp"
+                            android:src="@drawable/india_rupee" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3.5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="61"
+                            android:textColor="#818181"
+                            android:textSize="15sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rect_yellowbutton"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto_bold"
+                                android:letterSpacing="0.1"
+                                android:text="ADD"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="15dp"
+                android:background="#66e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/chiken"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Red Lentil Curry"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.0625"
+                        android:textSize="17.7sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Tarragon"
+                        android:letterSpacing="0.0625"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="13dp"
+                            android:layout_marginTop="13dp"
+                            android:src="@drawable/india_rupee" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3.5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="55"
+                            android:textColor="#818181"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rect_yellowbutton"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto_bold"
+                                android:letterSpacing="0.1"
+                                android:text="ADD"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="15dp"
+                android:background="#66e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/chines"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="No Bake Chocolate Cake"
+                        android:textColor="@color/black"
+                        android:textSize="17.7sp"
+                        android:letterSpacing="0.0625"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Cannellini beans"
+                        android:letterSpacing="0.0625"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="13dp"
+                            android:layout_marginTop="13dp"
+                            android:src="@drawable/india_rupee" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3.5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="47"
+                            android:textColor="#818181"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rect_yellowbutton"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto_bold"
+                                android:letterSpacing="0.1"
+                                android:text="ADD"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

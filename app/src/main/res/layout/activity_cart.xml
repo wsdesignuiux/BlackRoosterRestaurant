@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+    <include layout="@layout/toolbar_cart" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16.7dp"
+        android:layout_marginLeft="16.7dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.7dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Recomended"
+            android:textColor="@color/black"
+            android:textSize="17.3sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="See All"
+            android:textColor="@color/yellow"
+            android:textSize="13.3sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:paddingTop="28.3dp"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Total Amount"
+                android:textColor="#818181"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/black"
+                android:src="@drawable/india_rupee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.6dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="101"
+                android:textColor="@color/black"
+                android:textSize="18.3sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Include taxes"
+                android:textColor="#818181"
+                android:textSize="18.3sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/india_rupee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.6dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="4"
+                android:textColor="#808080"
+                android:textSize="18.3sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delivery Charges"
+                android:textColor="#818181"
+                android:textSize="18.3sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18.3dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/india_rupee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.6dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="5"
+                android:textColor="#818181"
+                android:textSize="18.3sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process to Pay"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="58dp"
+            android:textSize="17.3sp"
+            android:layout_marginRight="40dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rect_yellow"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

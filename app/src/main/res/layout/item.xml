@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/cake"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.787dp"
+                        android:textColor="@color/black"
+                        android:text="Olivia Long"/>
+                    <TextView
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.787dp"
+                        android:textColor="@color/yellow"
+                        android:text="0.5 KM away"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/yellow"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="16.3dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.07dp"
+                    android:textColor="@color/black"
+                    android:text="1 "/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cancel"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7dp"
+                    android:textColor="@color/black"
+                    android:text="Peppermint Patties "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6.78dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/yellow"
+                    android:textSize="13.3dp"
+                    android:text="Jack cheese"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#4990e4"
+                    android:textSize="13.3dp"
+                    android:text="Item on way"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="16.3dp"
+                android:layout_marginBottom="20dp"
+                android:background="#f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.07dp"
+                    android:textColor="@color/black"
+                    android:text="2 "/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cancel"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7dp"
+                    android:textColor="@color/black"
+                    android:text="Cheddar Chicken Burgers "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6.78dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/yellow"
+                    android:textSize="13.3dp"
+                    android:text="Passion fruit"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#4990e4"
+                    android:textSize="13.3dp"
+                    android:text="Item on way"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="16.3dp"
+                android:background="@color/gray"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

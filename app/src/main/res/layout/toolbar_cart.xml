@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Your Cart"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16.7sp" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="16.7dp"
+            android:src="@drawable/search_gray"
+            android:tint="@color/white"/>
+
+
+</android.support.v7.widget.Toolbar>

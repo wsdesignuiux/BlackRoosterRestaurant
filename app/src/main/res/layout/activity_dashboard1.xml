@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Dashboard1Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Discover"
+                        android:textColor="@color/yellow"
+                        android:textSize="35sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:gravity="bottom"
+                        android:src="@drawable/human"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="0dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.3dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="View product that fit : "
+                        android:textColor="#8a8687"
+                        android:textSize="13.3sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="300dp"
+                            android:layout_marginLeft="26.3dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner"
+                            android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="100dp" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/circleindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:ci_drawable="@drawable/ic_circular_shape_silhouette_yellow"
+                    app:ci_drawable_unselected="@drawable/ic_circular_shape_silhouette_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16.8dp"
+                android:layout_marginRight="15.2dp"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="16.5dp"
+                android:letterSpacing="0.0925"
+                android:fontFamily="@font/roboto_bold"
+                android:text="FOOD &amp; DRINK"
+                android:textColor="#808080"
+                android:textSize="13.3sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="12.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Popular menus"
+                    android:textColor="@color/yellow"
+                    android:textSize="21.7sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13.3dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="See All"
+                    android:textColor="@color/yellow"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="16.5dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/chiken" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Baked Chicken"
+                                android:letterSpacing="0.0925"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="16.5dp"
+                        android:elevation="0dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/fruit_food" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Fruit Food"
+                                android:letterSpacing="0.0925"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="16.5dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gathia" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Baked Chicken"
+                                android:letterSpacing="0.0925"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="16.5dp"
+                        android:elevation="0dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/chiken" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Fruit Food"
+                                android:letterSpacing="0.0925"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="16.5dp"
+                        android:elevation="0dp"
+                        android:layout_marginRight="15dp"
+                        app:cardCornerRadius="8dp"
+
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/fruit_food" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Fruit Food"
+                                android:letterSpacing="0.0925"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="RECIPES"
+                android:letterSpacing="0.0625"
+                android:textSize="13.3sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Cuisines to try!"
+                android:letterSpacing="0.0625"
+                android:textColor="@color/yellow"
+                android:textSize="21.7sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="18sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cake_straberry" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Pancake Strawberry"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.0625"
+                        android:textSize="16.7sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="1  km   JI.  Ki Mangun Sarkoro"
+                            android:textColor="@color/gray"
+                            android:layout_marginTop="10dp"
+                            android:letterSpacing="0.0625"
+                            android:textSize="13.3sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cake_straberry" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Pancake Strawberry"
+                        android:letterSpacing="0.0625"
+                        android:textColor="@color/black"
+                        android:textSize="16.7sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="1  km   JI.  Ki Mangun Sarkoro"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="10dp"
+                        android:letterSpacing="0.0625"
+                        android:textSize="13.3sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cake_straberry" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Pancake Strawberry"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.0625"
+                        android:textSize="16.7sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="1  km   JI.  Ki Mangun Sarkoro"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="10dp"
+                        android:letterSpacing="0.0625"
+                        android:textSize="13.3sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
